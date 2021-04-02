@@ -64,7 +64,7 @@ console.log(orderItemsIds)
     order = await order.save();
 
     if(!order)
-    return res.status(404).send('Category cannot be created')
+    return res.status(404).send('Order cannot be created')
     
     res.send(order)
 
@@ -82,7 +82,7 @@ router.put('/:id', async(req, res)=>{
     )
 
     if(!order){
-        return res.status(400).send('category cannot be created') 
+        return res.status(400).send('Order cannot be created') 
      }
      res.send(order)
 
